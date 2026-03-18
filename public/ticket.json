@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1001,
+    "title": "Login button not responding on mobile app",
+    "description": "After entering credentials, the login button just spins forever. Happens only on Android 14 devices. iOS works fine. Already cleared cache and reinstalled.",
+    "customer": "rahim.khan92@gmail.com",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-18T09:14:00Z"
+  },
+  {
+    "id": 1002,
+    "title": "Subscription renewal charged twice",
+    "description": "Was charged $19.99 on Nov 10 and again on Nov 15. Only one active subscription visible in account.",
+    "customer": "sarah.miller@company.co.uk",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-11-16T14:22:00Z"
+  },
+  {
+    "id": 1003,
+    "title": "Feature request: Dark mode for dashboard",
+    "description": "Love the product but staring at white background all day hurts my eyes. Dark mode would be amazing.",
+    "customer": "alexchen.dev@proton.me",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-11-20T03:45:00Z"
+  },
+  {
+    "id": 1004,
+    "title": "Payment failed – card declined but funds deducted",
+    "description": "Tried to upgrade to Pro plan. Got 'declined' message but $99 already charged by bank. No upgrade applied.",
+    "customer": "fatima.zahra786@yahoo.com",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-21T11:08:00Z"
+  },
+  {
+    "id": 1005,
+    "title": "PDF export shows broken layout",
+    "description": "When exporting project report as PDF, tables are cut off and images are missing on pages 2–3.",
+    "customer": "team@buildfast.io",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-11-17T16:55:00Z"
+  },
+  {
+    "id": 1006,
+    "title": "Account locked after password reset",
+    "description": "Followed reset link, set new password, now can't log in – says account locked for security.",
+    "customer": "john.doe.business@gmail.com",
+    "priority": "High",
+    "status": "Waiting on Customer",
+    "createdAt": "2025-11-19T08:30:00Z"
+  },
+  {
+    "id": 1007,
+    "title": "Cannot attach files larger than 5MB",
+    "description": "Error message says 'File too large' even though plan allows up to 25MB attachments.",
+    "customer": "maria.lopez@designstudio.art",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-20T19:12:00Z"
+  },
+  {
+    "id": 1008,
+    "title": "Wrong currency displayed in billing",
+    "description": "Dashboard shows prices in EUR but I'm in Canada and was previously billed in CAD.",
+    "customer": "canadiangamer87@hotmail.com",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-11-10T13:40:00Z"
+  },
+  {
+    "id": 1009,
+    "title": "App crashes when opening notifications",
+    "description": "iPhone 15 Pro – app crashes instantly when I tap the notifications tab. Reproducible 100%.",
+    "customer": "emilypark.music@icloud.com",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-11-21T02:17:00Z"
+  },
+  {
+    "id": 1010,
+    "title": "Missing email notifications for comments",
+    "description": "Teammates comment on my tasks but I don't receive any email even though setting is enabled.",
+    "customer": "devops.mike@techstartup.io",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-18T10:05:00Z"
+  },
+  {
+    "id": 1011,
+    "title": "Refund request for yearly plan",
+    "description": "Purchased annual plan 4 days ago but the product doesn't meet our needs. Would like full refund.",
+    "customer": "corporate.billing@enterpriseinc.com",
+    "priority": "Medium",
+    "status": "Waiting on Customer",
+    "createdAt": "2025-11-17T15:33:00Z"
+  },
+  {
+    "id": 1012,
+    "title": "2FA code never arrives via SMS",
+    "description": "Tried multiple times – no SMS received. Email 2FA works but SMS doesn't. Number is +88017xxxxxxxx.",
+    "customer": "hasanul.kibria.bd@gmail.com",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-21T09:50:00Z"
+  }
+]
