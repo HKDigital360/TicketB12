@@ -1,32 +1,49 @@
-import React from 'react';
-import circleImg from "../../assets/icons8-circle-48.png"
-const TicketCards = () => {
+
+// import circleImg from "../../assets/icons8-circle-48.png"
+import calenderImg from "../../assets/calendar.png"
+
+const TicketCards = ({customerTicket,setCount,count, task, setTask}) => {
+    // console.log(customerTicket)
+
+   function handleClick() {
+    setCount(count + 1);
+
+    setTask([...task,customerTicket])
+  }
+
+//    const cusTicketHandle = ()=>{
+// alert("Ticket Card Clicked")
+// }
+
     return (
 
 
         // <div className='grid  md:grid-cols-2 p-3 '>
 
-            <div className=' max-w-[100]  rounded-lg bg-white p-3'>
+            <div onClick={()=>handleClick()} className=' max-w-[100] hover:bg-sky-50 rounded-lg bg-white p-3'>
 
                 <div className='flex
              justify-between '>
-                    <h2>Login Issues - Can't Access Account</h2>
-                    <div className='flex'><img src={circleImg} alt="" />
-                        <h3>Open</h3>
+                    <h2 className='font-semibold text-xl'>{customerTicket.title}</h2>
+                    {/* <div className='flex'><img src={circleImg} alt="" /> */}
+                    <div className='flex items-center gap-2 bg-green-300 rounded-3xl h-6 p-1'>
+                        <div className='w-4 h-4 bg-linear-to-r from-green-700 to-lime-400  relative rounded-full'></div>
+                        <h3>{customerTicket.status}</h3>
                     </div>
 
 
                 </div>
 
-                <p>Customer is unable to log in to their account. They've tried resetting their password multiple times but still...</p>
-                <div className='flex justify-between'>
-                    <div className='flex'>
-                        <p>#1001</p>
-                        <h4>HIGH PRIORITY</h4>
+                <p className='text-[#627382] py-1.5'>{customerTicket.description}</p>
+                <div className='flex justify-between pt-3'>
+                    <div className='flex gap-3'>
+                        <p>{customerTicket.id}</p>
+                        <h4>{customerTicket.priority}</h4>
                     </div>
-                    <div className='flex'>
-                        <h4>John Smith</h4>
-                        <h4>1/15/2024</h4>
+                    <div className='flex gap-3 items-center'>
+                        <h4>{customerTicket.customer}</h4>
+                        <img className='w-4 h-4' src={calenderImg} alt="" />
+                        <h4>{customerTicket.createdAt}</h4>
                     </div>
 
                 </div>
