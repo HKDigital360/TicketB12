@@ -2,11 +2,12 @@
 // import circleImg from "../../assets/icons8-circle-48.png"
 import calenderImg from "../../assets/calendar.png"
 
-const TicketCards = ({customerTicket,setCount,count, task, setTask}) => {
+const TicketCards = ({customerTicket,inProgress, setInProgress, task, setTask}) => {
     // console.log(customerTicket)
 
    function handleClick() {
-    setCount(count + 1);
+    
+    setInProgress(inProgress + 1);
 
     setTask([...task,customerTicket])
   }

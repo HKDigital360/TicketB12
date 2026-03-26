@@ -1,8 +1,9 @@
 import React, { use } from 'react';
 import TicketCards from '../TicketCards/TicketCards';
 import TicketStatus from '../TicketStatus/TicketStatus';
+import TicketSolve from '../TicketSolve/TicketSolve';
 
-const MainTicketSection = ({ ticketPromise, handleClick, count, setCount, task, setTask }) => {
+const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgress, task, setTask, complete, setComplete }) => {
     const ticketData = use(ticketPromise);
 
 
@@ -17,7 +18,7 @@ const MainTicketSection = ({ ticketPromise, handleClick, count, setCount, task, 
                 <div className='grid sm:grid-cols-1 md:grid-cols-2  gap-2 '>
                     {
                         ticketData.map(customerTicket => <TicketCards key={customerTicket.id} customerTicket={customerTicket}
-                            count={count} setCount={setCount} handleClick={handleClick} task={task} setTask={setTask}></TicketCards>)
+                            inProgress={inProgress} setInProgress={setInProgress} handleClick={handleClick} task={task} setTask={setTask}></TicketCards>)
                     }
                 </div>
             </div>
@@ -28,9 +29,13 @@ const MainTicketSection = ({ ticketPromise, handleClick, count, setCount, task, 
                     //         <TicketStatus key={customerTicket.id} customerTicket={customerTicket}  handleClick={handleClick}>
 
                     //         </TicketStatus>)
-                    <TicketStatus task={task} setTask={setTask}></TicketStatus>
+                    <TicketStatus task={task} setTask={setTask} complete={complete} setComplete={setComplete}></TicketStatus>
 
+                    
                 }
+
+                     <TicketSolve> </TicketSolve>
+
             </div>
 
         </div>

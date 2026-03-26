@@ -22,17 +22,20 @@ const ticketPromise = fetchTickets()
 
 function App() {
  
-const [count, setCount] = useState(0);
-const [task, setTask] =useState([])
+const [inProgress, setInProgress] = useState(0);
+const [task, setTask] =useState([]);
+const [complete, setComplete]= useState(false);
+
+
 //  console.log(task)
 
   return (
     <>
      
      <NavBar></NavBar>
-     <HeroBoard count={count} setCount={setCount}></HeroBoard>
+     <HeroBoard inProgress={inProgress} setInProgress={setInProgress} complete={complete} setComplete={setComplete}></HeroBoard>
      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-      <MainTicketSection ticketPromise={ticketPromise} count={count} setCount={setCount} task={task} setTask={setTask} ></MainTicketSection>
+      <MainTicketSection ticketPromise={ticketPromise} inProgress={inProgress} setInProgress={setInProgress} task={task} setTask={setTask}  complete={complete} setComplete={setComplete}></MainTicketSection>
       
       </Suspense>
     {/* <TicketCards></TicketCards> */}

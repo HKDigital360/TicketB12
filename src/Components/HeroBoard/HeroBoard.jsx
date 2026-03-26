@@ -2,7 +2,7 @@ import React from 'react';
 import VectorImg1 from "../../assets/vector1.png"
 import VectorImg2 from "../../assets/vector2.png"
 
-const HeroBoard = ({count}) => {
+const HeroBoard = ({inProgress}) => {
     return (
         <div>
             <div className='mx-auto bg-[#edeef0]  max-w-360 mt-20'>
@@ -14,7 +14,7 @@ const HeroBoard = ({count}) => {
 
                     <div className='text-white  absolute '>
                         <h2 className= ' text-3xl'>In Progress</h2>
-                    <h2 className='text-6xl'>{count}</h2>
+                    <h2 className='text-6xl'>{inProgress}</h2>
                     </div>
                     
                     </div>
