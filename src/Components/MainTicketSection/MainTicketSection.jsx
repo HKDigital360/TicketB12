@@ -3,7 +3,7 @@ import TicketCards from '../TicketCards/TicketCards';
 import TicketStatus from '../TicketStatus/TicketStatus';
 import TicketSolve from '../TicketSolve/TicketSolve';
 
-const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgress, task, setTask, complete, setComplete }) => {
+const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgress, task, setTask, complete, setComplete, resolved, setResolved }) => {
     const ticketData = use(ticketPromise);
 
 
@@ -29,12 +29,24 @@ const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgre
                     //         <TicketStatus key={customerTicket.id} customerTicket={customerTicket}  handleClick={handleClick}>
 
                     //         </TicketStatus>)
-                    <TicketStatus task={task} setTask={setTask} complete={complete} setComplete={setComplete}></TicketStatus>
+                    <TicketStatus task={task}
+                        setTask={setTask}
+                        inProgress={inProgress}
+                        setInProgress={setInProgress}
+                        resolved={resolved}
+                        setResolved={setResolved} 
+                        complete={complete} 
+                        setComplete={setComplete}
+                         >
 
-                    
+                    </TicketStatus>
+
+
                 }
 
-                     <TicketSolve> </TicketSolve>
+                <TicketSolve> 
+
+                </TicketSolve>
 
             </div>
 

@@ -2,12 +2,13 @@ import React from 'react';
 import VectorImg1 from "../../assets/vector1.png"
 import VectorImg2 from "../../assets/vector2.png"
 
-const HeroBoard = ({inProgress}) => {
+const HeroBoard = ({inProgress, resolved}) => {
+    console.log(inProgress)
     return (
         <div>
             <div className='mx-auto bg-[#edeef0]  max-w-360 mt-20'>
                 <div className='flex flex-col sm:flex-row gap-4 justify-between gap-24px'>
-                    <div className= 'flex justify-center items-center text-center sm:w-176 h-62 rounded-2xl bg-linear-to-r from-purple-600 to-purple-300 relative'>
+                    <div className= 'flex justify-center items-center text-center sm:w-176 h-62 rounded-2xl bg-linear-to-r transition-transform duration-300 hover:scale-103 from-purple-600 to-purple-300 relative'>
 
                        <img className=' left-0' src={VectorImg1} alt="" />
                     <img className=' transform rotate-y-180 right-0 ' src={VectorImg1} alt="" /> 
@@ -19,14 +20,14 @@ const HeroBoard = ({inProgress}) => {
                     
                     </div>
 
-                    <div className='flex justify-center items-center text-center sm:w-176 h-62  rounded-2xl    bg-linear-to-r from-lime-400 to-green-600 relative'>
+                    <div className='flex justify-center items-center text-center sm:w-176 h-62  rounded-2xl  transition-transform duration-300 hover:scale-103  bg-linear-to-r from-lime-400 to-green-600 relative'>
 
                         <img className=' mr-0' src={VectorImg1} alt="" />
                     <img className=' transform rotate-y-180 ml-0' src={VectorImg1} alt="" />
 
                         <div className='text-white absolute'>
                         <h2 className= ' text-3xl'>Resolved</h2>
-                    <h2 className='text-6xl'>0</h2>
+                    <h2 className='text-6xl'>{resolved}</h2>
 
                     </div>
                     </div>

@@ -25,7 +25,7 @@ function App() {
 const [inProgress, setInProgress] = useState(0);
 const [task, setTask] =useState([]);
 const [complete, setComplete]= useState(false);
-
+const [resolved, setResolved] = useState(0);
 
 //  console.log(task)
 
@@ -33,9 +33,18 @@ const [complete, setComplete]= useState(false);
     <>
      
      <NavBar></NavBar>
-     <HeroBoard inProgress={inProgress} setInProgress={setInProgress} complete={complete} setComplete={setComplete}></HeroBoard>
+     <HeroBoard 
+     inProgress={inProgress} setInProgress={setInProgress} complete={complete} setComplete={setComplete} resolved={resolved}>
+
+     </HeroBoard>
+
      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-      <MainTicketSection ticketPromise={ticketPromise} inProgress={inProgress} setInProgress={setInProgress} task={task} setTask={setTask}  complete={complete} setComplete={setComplete}></MainTicketSection>
+
+      <MainTicketSection ticketPromise={ticketPromise} inProgress={inProgress} setInProgress={setInProgress} task={task} setTask={setTask}  complete={complete} setComplete={setComplete}
+      resolved={resolved} setResolved={setResolved}
+      >
+
+      </MainTicketSection>
       
       </Suspense>
     {/* <TicketCards></TicketCards> */}

@@ -21,7 +21,7 @@ const TicketCards = ({customerTicket,inProgress, setInProgress, task, setTask}) 
 
         // <div className='grid  md:grid-cols-2 p-3 '>
 
-            <div onClick={()=>handleClick()} className=' max-w-[100] hover:bg-sky-50 rounded-lg bg-white p-3'>
+            <div onClick={()=>handleClick()} className=' max-w-[100] transition-transform duration-300 hover:scale-101 hover:bg-sky-50 rounded-lg bg-white p-3'>
 
                 <div className='flex
              justify-between '>
