@@ -9,7 +9,7 @@ const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgre
 
 
     return (
-        <div className='mx-auto bg-[#edeef0] max-w-360  mt-20 flex justify-between gap-5'>
+        <div className='mx-auto bg-[#edeef0] max-w-360 mt-20 pb-15 px-10 sm:grid-cols-1 md:grid-cols-2 justify-between gap-5'>
 
             <div className='w-3/4'>
 

@@ -18,7 +18,7 @@ setResolvedTasks([...resolvedTasks, tComplete])
 
     return (
         <div>
-            <h2 className='my-2.5 font-semibold text-2xl mx-3.5'>Task Status</h2>
+            <h2 className=' my-2.5 mx-3.5 font-semibold text-2xl '>Task Status</h2>
 
             {
                 task.map(taskStatus => <div className='bg-white rounded-lg p-3 my-2 mr-2  border-b-emerald-400'>
