@@ -13,7 +13,7 @@ setInProgress(inProgress - 1);
 setResolved(resolved + 1);
 setTask(task.filter(taskStatus => taskStatus.id !== tComplete.id));
 const completedTask = (task.find(taskStatus => taskStatus.id !== tComplete.id));
-setResolvedTasks([...resolvedTasks, completedTask])
+setResolvedTasks([...resolvedTasks, tComplete])
 }
 
     return (

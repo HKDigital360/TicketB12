@@ -47,7 +47,7 @@ const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgre
                 }
 
                 <TicketSolve resolvedTasks={resolvedTasks}
-  setResolvedTasks={setResolvedTasks}> 
+                            setResolvedTasks={setResolvedTasks}> 
 
                 </TicketSolve>
 

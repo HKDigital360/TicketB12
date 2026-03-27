@@ -3,7 +3,7 @@ import VectorImg1 from "../../assets/vector1.png"
 import VectorImg2 from "../../assets/vector2.png"
 
 const HeroBoard = ({inProgress, resolved}) => {
-    console.log(inProgress)
+    console.log(inProgress, resolved)
     return (
         <div>
             <div className='mx-auto bg-[#edeef0]  max-w-360 mt-20'>
