@@ -26,6 +26,7 @@ const [inProgress, setInProgress] = useState(0);
 const [task, setTask] =useState([]);
 const [complete, setComplete]= useState(false);
 const [resolved, setResolved] = useState(0);
+const [resolvedTasks, setResolvedTasks] = useState([]);
 
 //  console.log(task)
 
@@ -41,7 +42,8 @@ const [resolved, setResolved] = useState(0);
      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
 
       <MainTicketSection ticketPromise={ticketPromise} inProgress={inProgress} setInProgress={setInProgress} task={task} setTask={setTask}  complete={complete} setComplete={setComplete}
-      resolved={resolved} setResolved={setResolved}
+      resolved={resolved} setResolved={setResolved} resolvedTasks={resolvedTasks}
+  setResolvedTasks={setResolvedTasks}
       >
 
       </MainTicketSection>

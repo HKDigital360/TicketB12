@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TicketSolve = () => {
-
+const TicketSolve = ({resolvedTasks, setResolvedTasks}) => {
+console.log(resolvedTasks)
     
     return (
         <div >

@@ -1,15 +1,19 @@
 import React from 'react';
 
-const TicketStatus = ({ task,inProgress, setInProgress, complete, setComplete, resolved, setResolved }) => {
+const TicketStatus = ({ task,setTask, inProgress, setInProgress, complete, setComplete, resolved, setResolved, resolvedTasks, setResolvedTasks}) => {
     // console.log(ticketData.map=>(ticketData[0]));
     // console.log(task)
     // console.log(complete)
 
-function  handleComplete (){
+function  handleComplete (tComplete){
+    
     
 setComplete(true);
 setInProgress(inProgress - 1);
 setResolved(resolved + 1);
+setTask(task.filter(taskStatus => taskStatus.id !== tComplete.id));
+const completedTask = (task.find(taskStatus => taskStatus.id !== tComplete.id));
+setResolvedTasks([...resolvedTasks, completedTask])
 }
 
     return (
@@ -19,7 +23,7 @@ setResolved(resolved + 1);
             {
                 task.map(taskStatus => <div className='bg-white rounded-lg p-3 my-2 mr-2  border-b-emerald-400'>
                     <h4 className='my-2.5 font-semibold text-xl mx-3.5'>{taskStatus.title}</h4>
-                    <button onClick={() =>handleComplete()}
+                    <button onClick={() =>handleComplete(taskStatus)}
                          className = "btn btn-accent bg-[#02A53B] transition-transform duration-300 hover:scale-105 text-white items-center w-full" > {complete ?  " Completed !" : " Complete"}</button>
             </div>)
 }
