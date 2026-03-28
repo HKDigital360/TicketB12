@@ -1,0 +1,15 @@
+What is JSX, and why is it used?
+Ans:-JSX means JavaScript XML file, Its mainly use for to write Html-like markup in javascript code.
+
+What is the difference between State and Props?
+Ans:-Shor form of property is props it can be used to pass data from one component to another.
+And The state is Mutable and It is local to the component only.
+
+What is the useState hook, and how does it work?
+Ans:- useState hook is a function that allows you to add state to a functional component.
+
+How can you share state between components in React?
+Ans:- We Pass the state though  that particular component and receive i within that component.
+
+How is event handling done in React?
+Ans:- 
