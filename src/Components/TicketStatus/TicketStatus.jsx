@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const TicketStatus = ({ task,setTask, inProgress, setInProgress, complete, setComplete, resolved, setResolved, resolvedTasks, setResolvedTasks}) => {
     // console.log(ticketData.map=>(ticketData[0]));
@@ -14,6 +15,7 @@ setResolved(resolved + 1);
 setTask(task.filter(taskStatus => taskStatus.id !== tComplete.id));
 const completedTask = (task.find(taskStatus => taskStatus.id !== tComplete.id));
 setResolvedTasks([...resolvedTasks, tComplete])
+toast("Task Completed")
 }
 
     return (

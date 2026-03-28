@@ -6,6 +6,7 @@ import MainTicketSection from './Components/MainTicketSection/MainTicketSection'
 import NavBar from './Components/NavBar/NavBar'
 import TicketCards from './Components/TicketCards/TicketCards'
 import Footer from './Components/Footer/Footer'
+import { ToastContainer } from 'react-toastify';
 // import TicketStatus from './Components/TicketStatus/TicketStatus'
 
 const fetchTickets = async ()=>{
@@ -51,6 +52,7 @@ const [resolvedTasks, setResolvedTasks] = useState([]);
       
       </Suspense>
     {/* <TicketCards></TicketCards> */}
+    <ToastContainer />
    <Footer></Footer>
     </>
   )
