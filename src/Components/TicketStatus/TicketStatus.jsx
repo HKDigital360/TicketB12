@@ -18,10 +18,10 @@ setResolvedTasks([...resolvedTasks, tComplete])
 
     return (
         <div>
-            <h2 className=' my-2.5 mx-3.5 font-semibold text-2xl '>Task Status</h2>
+            <h2 className=' my-2.5 whitespace-nowrap font-semibold text-2xl '>Task Status</h2>
 
             {
-                task.map(taskStatus => <div className='bg-white rounded-lg p-3 my-2 mr-2  border-b-emerald-400'>
+                task.map(taskStatus => <div className='bg-white rounded-lg p-3 my-2 mr-2  border-b-emerald-400 '>
                     <h4 className='my-2.5 font-semibold text-xl mx-3.5'>{taskStatus.title}</h4>
                     <button onClick={() =>handleComplete(taskStatus)}
                          className = "btn btn-accent bg-[#02A53B] transition-transform duration-300 hover:scale-105 text-white items-center w-full" > {complete ?  " Completed !" : " Complete"}</button>

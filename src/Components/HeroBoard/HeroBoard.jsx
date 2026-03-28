@@ -6,7 +6,7 @@ const HeroBoard = ({inProgress, resolved}) => {
     console.log(inProgress, resolved)
     return (
         <div>
-            <div className='mx-auto bg-[#edeef0]  max-w-360 mt-20'>
+            <div className='mx-auto  bg-[#edeef0]  max-w-360 mt-20'>
                 <div className='flex flex-col sm:flex-row gap-4 justify-between gap-24px'>
                     <div className= 'flex justify-center items-center text-center sm:w-176 h-62 rounded-2xl bg-linear-to-r transition-transform duration-300 hover:scale-103 from-purple-600 to-purple-300 relative'>
 

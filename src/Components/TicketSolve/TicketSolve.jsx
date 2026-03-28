@@ -6,12 +6,12 @@ console.log(resolvedTasks)
     return (
         <div >
 
-           <div>
-            <div className='text-xl font-semibold mt-6'>
+           <div className=''>
+            <div className='text-xl font-semibold mt-6 whitespace-nowrap'>
                 <h2>Ticket Resolve</h2>
             </div>
             {resolvedTasks.length === 0
-                ? <div className='bg-white rounded-lg p-3 my-2 mr-2'>
+                ? <div className='bg-white rounded-lg p-3 my-2 mr-2 w-full'>
                     <p>No Task Resolved yet</p>
                   </div>
                 : resolvedTasks.map(ticket => (

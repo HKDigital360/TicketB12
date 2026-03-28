@@ -9,7 +9,7 @@ const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgre
 
 
     return (
-        <div className='mx-auto bg-[#edeef0] max-w-360 mt-20 pb-15 px-10 flex justify-between gap-5'>
+        <div className='mx-auto bg-[#edeef0] max-w-360 mt-20 pb-15 px-10 flex flex-col lg:flex-row justify-between gap-5'>
 
             <div className='w-3/4'>
 
@@ -23,7 +23,7 @@ const MainTicketSection = ({ ticketPromise, handleClick, inProgress, setInProgre
                 </div>
             </div>
 
-            <div className='w-1/4  '>
+            <div className=' lg:w-1/4 w-full  '>
                 {
                     //    ticketData.map(customerTicket =>
                     //         <TicketStatus key={customerTicket.id} customerTicket={customerTicket}  handleClick={handleClick}>
